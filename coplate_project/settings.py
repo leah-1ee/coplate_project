@@ -139,5 +139,12 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
+ACCOUNT_SIGNUP_REDIRECT_URL = 'index'
+LOGIN_REDIRECT_URL = 'index'
+ACCOUNT_LOGOUT_ON_GET = True
+
 # Email settings
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# 자동으로 생성되는 기본 primary key 타입을 BigAutoField로 설정
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
